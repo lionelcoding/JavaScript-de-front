@@ -50,17 +50,21 @@ editCardButtonTwo.addEventListener("click",function(){
 buttonGreen()
 
 
-function nucleaire (){
-let topBar = document.querySelector("header")
-let cdn = document.querySelector("head").querySelector("link")
+// function nucleaire (){
+let topBar = document.querySelector("header");
+let cdn = document.querySelector("head link");
+let hrefBootstrapElement = cdn.getAttribute("href");
 
-topBar.addEventListener("click", function(){
-    if(cdn!="")
-    
-    cdn.href=" "
-    else
-    cdn.href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
-})
+
+topBar.addEventListener("dblclick", function(){
+    if(cdn.getAttribute("href")){
+        cdn.removeAttribute("href");
 }
+    else 
+    {console.log("cdnBBB")
+    cdn.setAttribute("href",hrefBootstrapElement)
+}
+})
+// }
 
-nucleaire()
+// nucleaire()
