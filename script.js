@@ -50,7 +50,7 @@ editCardButtonTwo.addEventListener("click",function(){
 buttonGreen()
 
 
-// function nucleaire (){
+function nucleaire (){
 let topBar = document.querySelector("header");
 let cdn = document.querySelector("head link");
 let hrefBootstrapElement = cdn.getAttribute("href");
@@ -65,6 +65,6 @@ topBar.addEventListener("dblclick", function(){
     cdn.setAttribute("href",hrefBootstrapElement)
 }
 })
-// }
+}
 
-// nucleaire()
+nucleaire()
